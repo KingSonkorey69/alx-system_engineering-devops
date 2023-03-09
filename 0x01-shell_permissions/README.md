@@ -26,7 +26,7 @@ Exercise 11: chmod -R +X . Add execute permission to all subdirectories of the c
 
 Exercise 12: mkdir -m 751 my_dir Create a directory called my_dir with permissions 751 in the working directory.
 
-Exercise 13: chgrp school hello Change gorup owner to school for the file hello
+Exercise 13: chgrp school hello Change group owner to school for the file hello
 
 Exercise 14: chown vincent:staff * Change owner to vincent and the group owner to staff for all files and directories in current directory.
 
@@ -34,4 +34,4 @@ Exercise 15: chown -h vincent:staff _hello Changes the owner and group owner of 
 
 Exercise 16: chown --from=guillaume betty hello Change owner of the file hello to betty only if it is currently owned by guillaume
 
-Exercise 17: telnet towel.blinkenlights.nl Play the Star Wars IV episode in the terminal. This is a premade script provided online.
+Exercise 17: telnet towel.blinkenlights.nl Play the Star Wars IV episode in the terminal.
