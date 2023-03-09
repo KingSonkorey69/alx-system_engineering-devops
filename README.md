@@ -1,32 +1,32 @@
-Shell Scripting Basics Exercises
+Shell Scripting Permissions Exercises
 
-Exercise 0: pwd === print working directory
+Exercise 0: su betty Script that changes your user ID to betty.
 
-Exercise 1: ls === list directory contents
+Exercise 1: id -un Print the effective user ID of current user. Other alternative is whoami
 
-Exercise 2: cd === change directory
+Exercise 2: id -Gn Prints all the groups the current user is part of.
 
-Exercise 3: ls -l === list directory contents in long form
+Exercise 3: chown betty hello Changes the owner of the file hello to the user betty
 
-Exercise 4: ls -la === list directory contents in long form, including hidden files
+Exercise 4: touch hello Create an empty file called hello
 
-Exercise 5: ls -la Note: Are files inherently ordered?
-Exercise 6: mkdir /tmp/my_first_directory Create a my_first_directory directory inside the tmp directory
-Exercise 7: mv /tmp/betty /tmp/my_first_directory/betty Move file betty, which is located inside the tmp directory, to the my_first_directory directory, which is also located inside the tmp directory. This exercise required some dir traversing.
-Exercise 8: rm /tmp/my_first_directory Delete the file betty  located in tmp/my_first_directory
-Exercise 9: rmdir /tmp/my_first_directory Delete the directory my_first_directory that is in the /tmp directory
-Exercise 10: cd - Change directory to the previous directory you were in.
-Exercise 11: ls -la . .. /boot List all files/directories, including hidden files/directories, from 3 separate directories: current directory, parent of working directory, and /boot directory. The ls command allows multiple directories to be listed separated by spaces.
+Exercise 5: chmod u+x hello Add execute permission to the owner of the file hello
 
-Exercise 12: file /tmp/iamafile Prints the type of file iamafile.
+Exercise 6: chmod ug+x,o+r hello Add execute permission to user and group owner, and read permission to others for file hello
 
-Exercise 13: ln -s /bin/ls ls Create a symbolic link named ls for /bin/ls
+Exercise 7: chmod ugo+x hello Add execution permission to all for file hello.
 
-Exercise 14: cp -u *.html .. Copy all html files from the current directory to the parent directory, but only copy files that didn't exist in the parent directory or are newer versions than the ones that already exist in the parent directory. The -u option didn't show on the terminal manual page. The -u option copies the file into the directory if its a newer version. If the file doesn't exist in the directory, it will copy over. The -n option works for copying files that don't exist in the parent directory, but it doesn't check if the file is a newer version or not.
+Exercise 8: chmod 007 hello Set permissions for file hello so owner and group don't have any permissions and other users have all permissions.
 
-Exercise 15: mv [[:upper:]]* /tmp/u Move all files that begin with a capital letter to /tmp/u
+Exercise 9: chmod 753 hello Set permissions so owner has all permissions, group has read and execute permissions and others have write and execute permissions.
 
-Exercise 16: rm *~ Deletes all files in the current directory that end with a ~
-Exercise 17: mkdir -p welcome/to/holberton Create directory welcome in current directory. Create directory to inside directory welcome. Create directory welcome nside directory to. The -p option creates any intermediate directories in the path argument.
-Exercise 18: ls -pam List all files and directories of the current directory, separated by commas. Directory names should end with a /. The listing should be alph ordered, except for dot (.) or dot dot (..), which should be listed at the beginning. The -a option is to show any hidden files. The -p option writes a / at the end of directory names. The -m option streams the output, separating each listing with commas.
-Exercise 19: 0 string HOLBERTON Holberton data !:mime Holberton Create a magic file called school.mgc that can be used with the command file to detect school data files. Holberton data files always contain the string SCHOOL at offset 0.
+Exercise 10: chmod --reference=olleh hello Copies the mode of file olleh to file hello.
+
+Exercise 11: chmod -R +X . Add execute permission to all subdirectories of the current directory for the everyone. Regular files should not be changed.
+
+Exercise 12: mkdir -m 751 my_dir  Create a directory called my_dir with permissions 751 in the working directory.
+Exercise 13: chgrp school hello Change gorup owner to school for the file hello.
+Exercise 14: chown vincent:staff * Change owner to vincent and the group owner to staff for all the files and directories in the working directory.
+Exercise 15: chown -h vincent:staff _hello changes the owner and the group owner of _hello to vincent and staff respectively.
+xercise 16: chown --from=guillaume betty hello changes the owner of the file hello to betty only if it is owned by the user guillaume.
+Exercise 17: telnet towel.blinkenlights.nl Play the Star Wars IV episode in the terminal. This is a premade script provided online.
