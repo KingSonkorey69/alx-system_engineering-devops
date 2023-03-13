@@ -7,3 +7,6 @@ Exercise 6: head -n 10 /etc/passwd This will Display the first 10 lines of /etc/
 Exercise 7: head --lines=3 iacta | tail --lines=1 This will displays the third line of the file iacta.
 Exercise 8: echo "Holberton School" > "\*\\\'\"Holberton School\"\'\\\*$\?\*\*\*\*\*:)" This script will create a file named exactly \*\\'"Best School"\'\\*$\?\*\*\*\*\*:) containing the text Best School ending by a new line.
 Exercise 9: ls -la > ls_cwd_content This is a script that writes into the file ls_cwd_content the result of the command ls -la. If the file ls_cwd_content already exists, it should be overwritten. If the file ls_cwd_content does not exist, create it.
+Exercise 10: #!/bin/bash
+echo -en "" | tail --lines=1 iacta >> iacta This is a script that duplicates the last line of the file iacta.
+Exercise 11: find . -name '*.js' -type f -delete This is script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.
