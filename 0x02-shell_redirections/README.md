@@ -45,3 +45,9 @@ Exercise 25: find . -type f -name \*.gif -printf "%f\n" | LC_ALL=C sort -f | rev
     The files should be sorted by byte values, but case-insensitive (file aaa should be listed before file bbb, file .b should be listed before file a, and file Rona should be listed after file jay)
     One file name per line
     The listing should end with a new line.
+Exercise 26:grep -Eo '^[^ ]+' file This is a that decodes acrostics that use the first letter of each line.
+
+    The ‘decoded’ message has to end with a new line.
+Exercise 27 :tail -n+2 | cut -f1 | sort | uniq -c | sort -rn | cut -c 9- | head -11 This is a script that  parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
+
+    Order by number of requests, most active host or IP at the top.
