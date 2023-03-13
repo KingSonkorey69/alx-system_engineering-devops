@@ -39,4 +39,5 @@ Exercise 14: sort | uniq -u This is a script that takes a list of words as input
     Output format: One line, one word
     Words should be sorted
 Exercise 15: grep root /etc/passwd This is a script that Display lines containing the pattern “root” from the file /etc/passwd.
-Exercise 16: grep -i bin /etc/passwd | wc -l This is a script that Display the number of lines that contain the pattern “bin” in the file /etc/pass
+Exercise 16: grep -i bin /etc/passwd | wc -l This is a script that Display the number of lines that contain the pattern “bin” in the file /etc/passroExercise 17: grep -C 3 root /etc/passwd This is a script that Display lines containing the pattern “root” and 3 lines after them in the file /etc/passwd.
+Exercise 18: grep -v 'bin' /etc/passwd This is a script that Display all the lines in the file /etc/passwd that do not contain the pattern “bin”.
