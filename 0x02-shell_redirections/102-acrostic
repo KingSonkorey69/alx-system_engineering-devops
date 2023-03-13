@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -Eo '^[^ ]+' file
+cut -c 1 | tr -d '\n' | sort
