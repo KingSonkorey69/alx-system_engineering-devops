@@ -38,3 +38,5 @@ Exercise 14: sort | uniq -u This is a script that takes a list of words as input
     Input format: One line, one word
     Output format: One line, one word
     Words should be sorted
+Exercise 15: grep root /etc/passwd This is a script that Display lines containing the pattern “root” from the file /etc/passwd.
+Exercise 16: grep -i bin /etc/passwd | wc -l This is a script that Display the number of lines that contain the pattern “bin” in the file /etc/pass
